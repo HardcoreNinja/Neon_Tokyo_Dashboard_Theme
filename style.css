@@ -64,12 +64,20 @@
 #navContainer div {
     place-items: center center;
     display: flex;
-    gap: 10px;
+    gap: 20px;
     transition: 0.5s;
 }
 
-#navContainer div:hover {
-    color: cyan;
+#navContainer>div>svg>path,
+#navContainer>div>svg {
+    transition: 0.5s;
+}
+
+#navContainer>div:hover>svg>path,
+#navContainer>div:hover {
+
+    color: rgb(0, 145, 200);
+    fill: rgb(0, 145, 200);
     transform: scale(1.2);
 }
 
