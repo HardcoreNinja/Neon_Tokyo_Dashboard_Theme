@@ -7,6 +7,7 @@
     font-family: 'Lato';
     padding: 0px;
     margin: 0px;
+    color: white;
 }
 
 #container {
@@ -22,6 +23,8 @@
     ;
 }
 
+/*Navigation Bar=====================================================================================*/
+
 #nav {
     grid-area: navBar;
     background: rgb(29, 33, 37);
@@ -31,8 +34,11 @@
     gap: 20px;
 }
 
+#nav .logo {
+    margin-top: 20px;
+}
+
 #navContainer {
-    color: white;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr 1fr 1fr;
@@ -49,6 +55,7 @@
         "privacy"
     ;
 
+    color: white;
     gap: 20px;
     place-items: center flex-start;
 }
@@ -107,9 +114,124 @@
     grid-area: privacy;
 }
 
+/*Transport Bar=====================================================================================*/
 #transport {
     grid-area: transport;
-    background: blue;
+    display: flex;
+}
+
+#transportContainer {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas:
+        "searchBar profile"
+        "userName shareOptions"
+    ;
+
+    color: white;
+    place-items: center flex-start;
+    background: rgb(22, 25, 28);
+}
+
+.searchBar {
+    grid-area: searchBar;
+}
+
+.searchBar svg {
+    margin-right: 20px;
+}
+
+.searchBar input {
+    font-size: 15px;
+    width: 20vw;
+    height: 25px;
+    background-color: rgba(40, 40, 40, .9);
+    border: 1px solid rgba(214, 0, 107, 0.5);
+    box-shadow: 2px 2px 7px 4px rgba(214, 0, 107, 0.5);
+    transition: .5s;
+    border-radius: 20px;
+}
+
+input:hover,
+input:focus {
+    outline: none;
+    transform: scale(1.15);
+    transition: .5;
+    box-shadow: 2px 2px 7px 4px rgb(0, 145, 200, 0.5);
+    border: 1px solid rgb(0, 145, 200);
+
+}
+
+.profile {
+    grid-area: profile;
+    display: flex;
+    flex-flow: row wrap;
+
+    gap: 20px;
+    font-weight: bold;
+}
+
+.profile .avatar {
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    background-image: url(avatar.jpg);
+    background-size: 100% auto;
+    border: 1px solid rgba(214, 0, 107, 0.5);
+}
+
+.userName {
+    grid-area: userName;
+    display: flex;
+    flex-flow: row wrap;
+    place-items: center center;
+    line-height: auto;
+    gap: 20px;
+}
+
+.userName h2 {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lato';
+    font-size: 20px;
+}
+
+.userName .avatar {
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+    background-image: url(avatar.jpg);
+    background-size: 100% auto;
+    border: 1px solid rgba(214, 0, 107, 0.5);
+}
+
+.shareOptions {
+    grid-area: shareOptions;
+    display: flex;
+    flex-flow: row wrap;
+    place-items: center center;
+    place-content: center center;
+    gap: 20px;
+}
+
+.shareOptions button {
+    width: 100px;
+    height: auto;
+    font-family: "Lato";
+    background: rgba(214, 0, 107, 1);
+    border: 1px solid black;
+    color: black;
+    border-radius: 5px;
+    transition: .5s;
+    font-weight: bold;
+}
+
+button:hover,
+button:active {
+    transform: scale(1.15);
+    box-shadow: 2px 2px 7px 4px rgba(214, 0, 107, 0.5);
 }
 
 #body {
