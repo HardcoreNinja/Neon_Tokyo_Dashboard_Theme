@@ -1,0 +1,32 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+#container {
+    min-width: 100vw;
+    min-height: 100vh;
+    background: pink;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+    grid-template-areas:
+        "navBar transport"
+        "navBar body"
+    ;
+}
+
+#nav {
+    grid-area: navBar;
+    background: orange;
+}
+
+#transport {
+    grid-area: transport;
+    background: blue;
+}
+
+#body {
+    grid-area: body;
+    background: magenta;
+}
