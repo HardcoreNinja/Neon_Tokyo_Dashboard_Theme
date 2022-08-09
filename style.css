@@ -8,11 +8,11 @@
     min-height: 100vh;
     background: pink;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr 4fr;
     grid-template-areas:
-        "navBar transport"
-        "navBar body"
+        "navBar transport transport"
+        "navBar body announcements"
     ;
 }
 
@@ -29,4 +29,9 @@
 #body {
     grid-area: body;
     background: magenta;
+}
+
+#announcements{
+    grid-area: announcements;
+    background: greenyellow;
 }
