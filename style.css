@@ -21,6 +21,8 @@
         "navBar transport transport"
         "navBar body announcements"
     ;
+
+    max-height: 100vh;
 }
 
 /*Navigation Bar=====================================================================================*/
@@ -241,6 +243,7 @@ button:active {
     flex-flow: row wrap;
     place-content: flex-start center;
     place-items: flex-start center;
+    overflow: scroll;
 }
 
 #body>div:hover {
