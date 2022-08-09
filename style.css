@@ -32,11 +32,12 @@
     display: flex;
     flex-flow: column wrap;
     place-content: center flex-start;
+    place-items: center flex-start;
     gap: 20px;
 }
 
 #nav .logo {
-    margin-top: 20px;
+    margin: 20px;
 }
 
 #navContainer {
@@ -56,6 +57,7 @@
         "privacy"
     ;
 
+    margin: 20px;
     color: white;
     gap: 20px;
     place-items: center flex-start;
@@ -220,7 +222,7 @@ input:focus {
     grid-area: shareOptions;
     display: flex;
     flex-flow: row wrap;
-    place-items: center center;
+    place-items: center center; 
     place-content: center center;
     gap: 20px;
 }
