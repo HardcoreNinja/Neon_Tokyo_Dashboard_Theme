@@ -236,7 +236,54 @@ button:active {
 
 #body {
     grid-area: body;
-    background: magenta;
+    background: rgb(47, 54, 61);
+    display: flex;
+    flex-flow: row wrap;
+    place-content: flex-start center;
+    place-items: flex-start center;
+}
+
+#body>div:hover {
+    transform: scale(1.12);
+}
+
+#objectContainer {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 20px;
+    gap: 20px;
+    background: rgb(29, 33, 37);
+    border: 2px solid rgb(214, 0, 107);
+
+    max-width: 300px;
+    max-height: auto;
+    margin: 20px;
+    transition: 0.5s;
+}
+
+#objectContainer>div {
+    width: 100%;
+    height: auto;
+}
+
+#objectContainer>div>h2 {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lato';
+    font-size: 20px;
+}
+
+#objectContainer>div>p {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lato';
+    font-size: 15px;
+}
+
+#objectContainer>.shareButtons {
+    display: flex;
+    place-content: flex-start flex-end;
+    gap: 20px
 }
 
 #announcements {
