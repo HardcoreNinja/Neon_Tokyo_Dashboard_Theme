@@ -215,14 +215,14 @@ input:focus {
     border-radius: 50%;
     background-image: url(avatar.jpg);
     background-size: 100% auto;
-    border: 1px solid rgba(214, 0, 107, 0.5);
+    border: 1px solid rgb(214, 0, 107);
 }
 
 .shareOptions {
     grid-area: shareOptions;
     display: flex;
     flex-flow: row wrap;
-    place-items: center center; 
+    place-items: center center;
     place-content: center center;
     gap: 20px;
 }
