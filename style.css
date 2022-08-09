@@ -1,4 +1,10 @@
+@font-face {
+    font-family: 'Lato';
+    src: url(Lato-Light.ttf);
+}
+
 * {
+    font-family: 'Lato';
     padding: 0px;
     margin: 0px;
 }
@@ -18,7 +24,87 @@
 
 #nav {
     grid-area: navBar;
-    background: orange;
+    background: rgb(29, 33, 37);
+    display: flex;
+    flex-flow: column wrap;
+    place-content: center flex-start;
+    gap: 20px;
+}
+
+#navContainer {
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr 1fr 1fr;
+    grid-template-areas:
+        "home"
+        "profile"
+        "messages"
+        "history"
+        "tasks"
+        "communities"
+        "..."
+        "settings"
+        "support"
+        "privacy"
+    ;
+
+    gap: 20px;
+    place-items: center flex-start;
+}
+
+#navContainer div {
+    place-items: center center;
+    display: flex;
+    gap: 10px;
+    transition: 0.5s;
+}
+
+#navContainer div:hover {
+    color: cyan;
+    transform: scale(1.2);
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    background: url(logo.svg) no-repeat center;
+}
+
+.home {
+    grid-area: home;
+}
+
+.profile {
+    grid-area: profile;
+}
+
+.messages {
+    grid-area: messages;
+}
+
+.history {
+    grid-area: history;
+}
+
+.tasks {
+    grid-area: tasks;
+}
+
+.communities {
+    grid-area: communities;
+}
+
+.settings {
+    grid-area: settings;
+}
+
+.support {
+    grid-area: support;
+}
+
+.privacy {
+    grid-area: privacy;
 }
 
 #transport {
@@ -31,7 +117,7 @@
     background: magenta;
 }
 
-#announcements{
+#announcements {
     grid-area: announcements;
     background: greenyellow;
 }
