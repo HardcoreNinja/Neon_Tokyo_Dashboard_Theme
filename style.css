@@ -28,7 +28,7 @@
 
 #nav {
     grid-area: navBar;
-    background: rgb(29, 33, 37);
+    background: rgb(22, 25, 28);
     display: flex;
     flex-flow: column wrap;
     place-content: center flex-start;
@@ -232,7 +232,8 @@ input:focus {
 button:hover,
 button:active {
     transform: scale(1.15);
-    box-shadow: 2px 2px 7px 4px rgba(214, 0, 107, 0.5);
+    box-shadow: 2px 2px 7px 4px rgba(44, 180, 213, .5);
+    background-color: rgb(44, 180, 213);
 }
 
 /*Body Section=====================================================================================*/
@@ -247,6 +248,8 @@ button:active {
 
 #body>div:hover {
     transform: scale(1.12);
+    box-shadow: 2px 2px 7px 4px rgba(44, 180, 213, .5);
+    border-color: rgb(44, 180, 213);
 }
 
 #objectContainer {
@@ -332,6 +335,8 @@ button:active {
 
 .announcementsSection>.contentBox:hover {
     transform: scale(1.12);
+    box-shadow: 2px 2px 7px 4px rgba(44, 180, 213, .5);
+    border-color: rgb(44, 180, 213);
 }
 
 .announcementsSection>.contentBox>h2 {
@@ -398,4 +403,6 @@ button:active {
 
 .trendingSection>.userBox:hover {
     transform: scale(1.12);
+    box-shadow: 2px 2px 7px 4px rgba(44, 180, 213, .5);
+    border-color: rgb(44, 180, 213);
 }
